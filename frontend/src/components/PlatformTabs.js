@@ -30,7 +30,7 @@ class PlatformTabs extends React.Component {
          'AWS': <><TabTitleIcon><FaAws /></TabTitleIcon><TabTitleText>AWS</TabTitleText></>
     }
     return (
-      <Tabs activeKey={activeTabKey} onSelect={this.handleTabClick}>
+      <Tabs activeKey={activeTabKey} isFilled onSelect={this.handleTabClick}>
       {this.props.data.map((tab, index) => (    
         <Tab eventKey={index} title={(icons[tab.title] || <TabTitleText>{tab.title}</TabTitleText>)}> 
           <TabContent>

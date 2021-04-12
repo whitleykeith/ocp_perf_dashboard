@@ -27,7 +27,7 @@ class VersionTabs extends React.Component {
 
 
       return (
-        <Tabs activeKey={activeTabKey} isSecondary isFilled  isBox variant="light300" onSelect={this.handleTabClick}>
+        <Tabs activeKey={activeTabKey} isSecondary isFilled isBox onSelect={this.handleTabClick}>
         {this.props.data.map((tab, index) => (         
           <Tab eventKey={index} title={<TabTitleText>{tab.version}</TabTitleText>}> 
             <TabContent>

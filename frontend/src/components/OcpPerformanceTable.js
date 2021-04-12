@@ -48,7 +48,7 @@ export default function OcpPerformanceTable() {
   return (
     <>
     <OcpPerformanceTableContext.Provider value={{perfData, fetchPerfData}}>
-      <div className="OcpPerformanceTable-header">
+    <div className="OcpPerformanceTable-header">
       <OcpPerformanceHeader />
     </div>
     <div className="OcpPerformanceTable">
